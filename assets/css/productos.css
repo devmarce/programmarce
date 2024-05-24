@@ -1,0 +1,29 @@
+.icon-fonsize { font-size: 1.2rem; }
+
+/*acordion styles*/
+.accordion-button {
+    color: #6600ff;
+    font-weight: bold;
+}
+.accordion-button:not(.collapsed) {
+    color: #ffff;
+    background: linear-gradient(135deg,#8f0096 0%,#4d00c6 100%);
+}
+.accordion-button:hover {
+    background: linear-gradient(135deg, #8f0096 0%, #4d00c6 100%);
+    color: white;
+}
+
+/* Styles items Packs */
+.item-pack { margin-bottom: 1.2rem; }
+
+.barra-redes {
+    border-radius: 1rem;
+    background: #0506062e;
+    padding: 3px;
+    text-align: center;
+}
+.barra-redes p {
+    color: #850edf;
+    font-weight: 500;
+}

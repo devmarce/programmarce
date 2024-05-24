@@ -1,0 +1,77 @@
+.main-conteiner {
+    margin-top: 81px;
+    background-color: black;
+}
+
+/* video */
+.sect {
+    width: 100%;
+    min-height: 500px;
+}
+
+#sect1 {
+    background-color: #3333337d;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
+}
+video {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*height: 100%;*/
+    z-index: -1;
+}
+
+.video-text {
+    margin: 5rem 0px 0px 5rem;
+    background-color: transparent;
+}
+
+/* Styles Formulario */
+.form-label {
+    text-align: left;
+    font-weight: 500;
+}
+
+.form-content {
+    background: #4d00c6;
+    color: white;
+}
+
+/* msj de solicitud */
+.wpcf7 form.spam .wpcf7-response-output {
+    border-color: #dc3545;
+    border-radius: 0.3rem;
+}
+
+/* Boton packs */
+.btn-packs-view {
+    background: black;
+    border: 1px solid #fb00ff;
+}
+
+/* icons redes sociales */
+.redes-icons {
+    color: #d800ff;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+/*----------------------------------------------------*/
+/* reponsive page contacto */
+
+@media (max-width: 768px) {
+    .main-conteiner {
+        margin-top: 0px;
+    }
+
+    .sect {
+        min-height: 10rem;
+    }
+    .video-text {
+        margin: 2.5rem 0px 0px 2.5rem;
+        background-color: transparent;
+    }
+}

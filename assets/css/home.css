@@ -1,0 +1,31 @@
+.carousel-caption { top: 14rem; }
+#carouselExampleCaptions { margin-top: 81px;}
+#carouselExampleCaptions h5, h1 { font-size: 3rem;}
+.carousel-item img { height: 50rem; }
+
+/*card home*/
+.card-body ul { padding: 0px; }
+.card-body ul li {
+    list-style: none;
+    line-height: 2.3rem;
+    color: chocolate;
+}
+
+.card_conten { margin-bottom: 1rem; }
+.card-title { font-weight: bold; }
+/*
+vista mobile template home
+*/
+@media (max-width: 768px) {
+    /*contenedor gral - mobile*/
+    .main_template-home { margin-top: 0px;}
+    #carouselExampleCaptions { margin-top: 0px;}
+
+    /*slider*/
+    .carousel-item img { height: 15rem; }
+
+    /*texto de slider*/
+    .carousel-caption { top: 0rem; display: block !important; }/*altura del texto*/
+    #carouselExampleCaptions h5, h1 { font-size: 1rem; }
+    #carouselExampleCaptions p { font-size: 0.7rem; }
+}

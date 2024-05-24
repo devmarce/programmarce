@@ -1,0 +1,167 @@
+.main-header{
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    background: linear-gradient(135deg,#8f0096 0%,#4d00c6 100%);
+    width: 100%;
+    height: 82px;/*custom: para centrar en vertical el logo*/
+    padding: 0px 1rem 1rem 1rem;
+    box-shadow: inset 0px -8px 9px #d908ff;
+}
+
+.main-header__logodefaul { margin-top: 0.4rem; }
+
+.main-header__container {
+    display: flex;
+    padding: 0 2rem 0 2rem;
+}
+
+/*title site ini*/
+.main-header__title {
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.main-header__title span {
+    color: white;
+    font-weight: 500;
+}
+/*title site fin*/
+
+/*logo-css*/
+.logo img {
+    height: 70px;
+    width: auto;
+}
+
+/*menu-css*/
+.main-header__menu {
+    width: 65%;
+}
+
+.menu-principal {
+    justify-content: end;/*mobile -> justify center*/
+}
+.menu-principal ul { display: flex; }
+
+.menu-principal ul li { list-style: none; }
+
+.menu-principal ul li a{  text-decoration: none; color: white; }
+
+.nav-link {
+    color: white;
+}
+
+.nav-link a:focus, .nav-link a:hover {
+    color: black;
+    text-shadow: -1px 1px 7px #f004ff !important;
+    font-weight: 700;
+}
+
+.nav-link a:visited {
+    color: #0aeba2;
+}
+
+header label img {
+    display: none;
+}
+#menu-check{
+    display: none;/* quita el chek del menu (checkbox) */
+    margin-top: 1rem;
+}
+
+
+
+/*--- Vista mobile - responsive ------------init------------*/
+@media (max-width: 768px) {
+    .main-header {
+        height: 66px;
+        position: relative;
+    }
+
+    .main-header__container {
+        padding: 0 0.5rem 0 0.5rem;
+    }
+
+    /*title-mobile site ini*/
+    .main-header__title {
+        margin-top: 16px;
+        margin-left: 10px;
+    }
+
+    .main-header__title span {
+        color: white;
+        font-weight: 500;
+    }
+    /*title-mobile site fin*/
+
+    /*menu bugger mobile*/
+    .main-header__menu {
+        width: 10%;
+    }
+
+    /*logo-css mobile*/
+    .logo img {
+        height: 50px;
+        width: auto;
+    }
+
+    /*menu-css-movile*/
+    .menu-principal ul {
+        display: block;
+        padding: 0px;
+        margin: 0px;
+    }
+    .menu-principal { justify-content: center; }
+     /*input-check*/
+
+    /*label ---> BOTON*/
+    header label {
+        cursor: pointer;
+        position: fixed;
+        right: 1rem;
+        top: 20px;
+        margin-right: 10px;
+        z-index: 1000;
+    }
+    header label img {
+        display: block;
+        width: 24px;
+    }
+
+    /*--------------- nav --------------------------*/
+    .items-menu {
+        /*display: none;/* para poder maquetar escondemos momentaneamente*/
+        position: fixed;
+        top: 66px;
+        right: 0px;
+        width: 100%;
+        height: 180px;
+        background: rgb(51 51 51 / 64%);
+        transition: all 0.5s;
+        transform: translateX(100%);
+        z-index: 1000;
+        text-align: center;
+    }
+
+    .items-menu a { /*links*/
+        display: block;
+        color: #fff;
+        font-weight: bold;
+        height: 50px;
+        text-decoration: none;
+        padding: 15px;
+        border-bottom: 1px solid rgba(255,255,255,0.3);/* 0.3 transparencia */
+    }
+
+    .items-menu a:hover{ /* al pasar el mouse en las etiqutas cambie */
+        background: rgba(255,255,255,0.3);
+    }
+
+    /* evento del click para el icono-menu (mostrar-ocultar) */
+    #menu-check:checked ~ .items-menu{/* cuando tenga el check */
+        transform: translateX(0%);/* cambia a la posicion 0 en X */
+    }
+    /*fin menu_css_movile*/
+}
+/*------------------------------ Vista mobile - responsive ------------fin------------*/
